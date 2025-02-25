@@ -1,0 +1,26 @@
+Things that I've learned through this project!!
+ToDo.java
+
+A default(no-argument) constructor from ToDo class:
+The JPA requires every Entity (table from db) class has to include a default no-arg constructor.
+This can be public or protected but regardless of JPA specification, every class object
+should provide a default constructor explicitly.
+
+
+
+
+Reflection:
+JPA utilizes reflection to access every member, annotation, and relation while creating SQL queries.
+
+
+Spring HATEOAS:
+It helps me to create hypermedia-driven outputs (level 3 REST API).
+
+EntityModel<T>: a generic container that includes the data of a certain ToDo
+and a collection of links (hyperlinks that can possibly access).
+
+CollectionModel<>: a container to encapsulate collections of resources (able to include links)
+⭐ The CollectionModel should include every ToDo's resource NOT the ToDo itself.
+
+
+
