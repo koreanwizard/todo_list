@@ -24,3 +24,11 @@ CollectionModel<>: a container to encapsulate collections of resources (able to 
 
 
 
+Creating an Assembler:
+To avoid a repetition of link creation, we can change the ToDo object into EntityModel<Todo> object.
+The Spring HATEOAS includes a RepresentationModelAssembler interface that converts ToDo into EntityModel<ToDo>.
+The 'toModel()' method converts a non-model object into a model-based object.
+The @Component annotation automatically creates assembler when the ToDoApplication starts.
+After creating the assembler, it will be added in the ToDoController.
+
+
